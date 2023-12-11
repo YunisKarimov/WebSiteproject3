@@ -129,6 +129,38 @@ section {
   line-height: 2;
 }
 
+.about {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4rem;
+}
+
+
+.about .image{
+  flex: 1 1 60rem;
+}
+
+.about .image img{
+  width: 100%;
+}
+
+.about .content{
+  flex: 1 1 40rem;
+}
+
+.about .content h3{
+  font-size: 4rem;
+  color: var(--black);
+}
+
+.about .content p{
+  padding: 1rem 0 ;
+line-height: 2;
+color: var(--light-color);
+font-size: 1.5rem;
+}
+
 @media (max-width: 991px) {
   html {
     font-size: 55%;
@@ -165,18 +197,23 @@ section {
     margin: 2rem;
   }
 
-  .home-bg{
+  .home-bg {
     background-position: left;
   }
 
-  .home-bg .home{
+  .home-bg .home {
     justify-content: center;
   }
 
-  .home-bg .home .content h3{
+  .home-bg .home .content h3 {
     font-size: 4rem;
   }
 
+
+
+  .about .content h3{
+    font-size: 3rem;
+  }
 }
 
 @media (max-width: 450px) {
